@@ -1,1 +1,24 @@
-git add xxx    //
+//设置用户签名
+git config --global user.name xxx
+git config --global user.email xxx@xxx.com
+
+git init 		//初始化本地库
+git status 		//查看本地库状态
+git add 文件名    	//添加到暂存区
+git commit -m "日志信息" 文件名	//提交到本地库
+git reglog		//查看版本信息
+git log		//查看详细版本信息
+git reset --hard 版本号	//版本穿梭
+
+git branch 分支名	//创建分支
+git branch -v 	//查看现有分支
+git checkout 分支名	//切换分支
+git merge 分支名	//把分支名所示分支合并到本分支
+//创建新分支后，master不修改，此时merge不会产生冲突
+//创建新分支后，若master进行了修改，此时merge会需要人为修改冲突的代码后，运行git add 文件名 和git commit -m "日志信息"(注意此时不加文件名)进行提交
+
+//上传至github远程仓库
+//仓库名最好与本地库(文件夹)名称一致
+git remote -v	//查看当前所有远程地址别名
+git remote add 别名 远程地址	//给远程地址起别名
+git push 别名 分支名(master) 	//推送本地分支上的内容到远程库
