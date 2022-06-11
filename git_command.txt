@@ -24,3 +24,8 @@ git remote add 别名 远程地址	//给远程地址起别名
 git push 别名 分支名(master) 	//推送本地分支上的内容到远程库
 git pull 别名 分支名(master)   //拉取远程库分支到本地库
 git clone 远程地址		//克隆远程库到本地
+
+//设置SSH免密登录
+git-keygen -t rsa -C 邮箱签名   //在C:\Users\user路径下运行git bash生成.ssh文件夹，再将id_rsa.pub中的内容添加到自己github账号下，获得SSH链接
+git pull SSH链接 分支名(master)  //拉取
+
