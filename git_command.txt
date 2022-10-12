@@ -22,6 +22,7 @@ git merge 分支名	//把分支名所示分支合并到本分支
 //仓库名最好与本地库(文件夹)名称一致
 git remote -v	//查看当前所有远程地址别名
 git remote add 别名 远程地址	//给远程地址起别名
+git remote rm 别名            //删除别名
 git push 别名 分支名(master) 	//推送本地分支上的内容到远程库
 git pull 别名 分支名(master)   //拉取远程库分支到本地库
 git clone 远程地址		//克隆远程库到本地
