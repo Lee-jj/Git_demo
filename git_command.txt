@@ -16,6 +16,7 @@ git checkout 分支名	//切换分支
 git merge 分支名	//把分支名所示分支合并到本分支
 //创建新分支后，master不修改，此时merge不会产生冲突
 //创建新分支后，若master进行了修改，此时merge会需要人为修改冲突的代码后，运行git add 文件名 和git commit -m "日志信息"(注意此时不加文件名)进行提交
+//解决Git中fatal: refusing to merge unrelated histories[https://developer.aliyun.com/article/614459]
 
 //上传至github远程仓库
 //仓库名最好与本地库(文件夹)名称一致
