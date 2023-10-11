@@ -29,6 +29,10 @@ git clone 远程地址		//克隆远程库到本地
 // git提交或克隆报错fatal: unable to access ‘https://github.com/tata20191003/autowrite.git/‘: Failed to connec
 // 上述问题解决方案：https://blog.csdn.net/good_good_xiu/article/details/118567249
 
+// 对某个文件取消跟踪 
+git rm --cached readme1.txt  删除readme1.txt的跟踪，并保留在本地。
+git rm --f readme1.txt  删除readme1.txt的跟踪，并且删除本地文件。
+
 //设置SSH免密登录
 git-keygen -t rsa -C 邮箱签名   //在C:\Users\user路径下运行git bash生成.ssh文件夹，再将id_rsa.pub中的内容添加到自己github账号下，获得SSH链接
 git pull SSH链接 分支名(master)  //拉取
