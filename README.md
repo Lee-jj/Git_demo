@@ -41,4 +41,8 @@ git rm --f readme1.txt              // 删除readme1.txt的跟踪，并且删除
 git-keygen -t rsa -C 邮箱签名        // 在C:\Users\user路径下运行git bash生成.ssh文件夹，再将id_rsa.pub中的内容添加到自己github账号下，获得SSH链接
 git pull SSH链接 分支名(master)      // 拉取
 
+// 克隆远程仓库流程
+1. 本地文件夹中使用 git clone 命令直接克隆远程仓库的ssh（本地已经有密钥）
+2. 遇到问题：ssh: connect to host github.com port 22: Connection timed out，解决：参考：https://zhuanlan.zhihu.com/p/521340971，修改22端口为443
+
 ```
